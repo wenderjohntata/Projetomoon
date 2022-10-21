@@ -5,7 +5,7 @@ body {
  /* MENU //////////////////*/ 
  .menu {
     display: flex;
-    background-color: #0e0027;
+    background-color: #000;
     align-items: center;
     height: 8rem;
     border-bottom: 1px solid white;
