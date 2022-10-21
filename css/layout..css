@@ -103,6 +103,12 @@ body {
 .frontend {
     display: flex;   
     justify-content: center 
+    
+}
+
+.frontend img {
+    height:556px;
+    
 }
 
 .backend  {
@@ -125,6 +131,16 @@ body {
     padding: 4% 7%;
 }
 
+.post1__lista__intens {
+    padding: 0;
+    text-align: left;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.post1__lista__intens > strong {
+    color: rgb(245, 0, 192);
+}
 
 /*-------------------*/
 /*----RODAPE-------*/
@@ -141,7 +157,7 @@ body {
     border-top: 1px solid #fff;
     margin: 0;
 
-    padding: 15px;
+    padding:15px 0px;
     
 }
 
