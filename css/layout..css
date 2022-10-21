@@ -24,7 +24,7 @@ body {
     justify-content: center;
     list-style-type: none;
     height: 100%;
-    padding: 0 60px;
+    
 }
 
 
@@ -37,12 +37,14 @@ body {
 .navegacao-item>a {
     text-decoration: none;
     color: white;
+    padding: 152px 80px;
 }
 
 .logo {
     color: white;
     margin-left: 20px;
 }
+
 /*-------------------*/
 /*----BANNER1-------*/
 /*-----------------*/

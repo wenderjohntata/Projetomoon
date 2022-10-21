@@ -24,7 +24,7 @@
             justify-content: center;
             list-style-type: none;
             height: 100%;
-            padding: 0 60px;
+            
         }
         
 
@@ -37,6 +37,7 @@
         .navegacao-item>a {
             text-decoration: none;
             color: white;
+            padding: 152px 80px;
         }
         
         .logo {
@@ -49,6 +50,7 @@
         
         .minhafoto {
             border-radius: 30px;
+
         }
         
         .bloco1 {
@@ -59,8 +61,11 @@
             padding: 20px;
             margin-top: 25px;
             border-radius: 20px;
+            border: 2px solid rgba(255, 63, 213, 0.582);
             align-items: center;
         }
+
+        
         
         .titulo {
             text-align: center;
@@ -150,10 +155,13 @@
             padding: 15px;
 
             background-color: #140038;
-            border-color: white;
+            border-color: #07c5ff;
             border-style: outset;
 
             cursor: pointer;
+
+            transform: scale(1.0);
+            transition: 0.5s;
 
         }
 
@@ -163,10 +171,8 @@
         }
 
         .botao:hover {
-            transition: 0.4s;
-            background-color: #371b6b;
-            
-
+            transform: scale(1.1);
+            transition: 0.5s
         }
 
 
