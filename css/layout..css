@@ -1,0 +1,170 @@
+body {
+    background-color: #0e0027;
+}
+
+ /* MENU //////////////////*/ 
+ .menu {
+    display: flex;
+    background-color: #0e0027;
+    align-items: center;
+    height: 8rem;
+    border-bottom: 1px solid white;
+}
+
+.navegacao {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly
+}
+
+.navegacao-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    height: 100%;
+    padding: 0 60px;
+}
+
+
+.navegacao-item:hover {
+    background-color: #371b6b;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.navegacao-item>a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    color: white;
+    margin-left: 20px;
+}
+/*-------------------*/
+/*----BANNER1-------*/
+/*-----------------*/
+
+.banner {
+    margin: 0;
+    background-color: antiquewhite;
+
+    text-align: center;
+    
+
+}
+
+
+.banner__titulo {
+    text-align: center;
+}
+
+.banner__descricao {
+    text-align: center;
+}
+
+/*-------------------*/
+/*----BOTAO PRINCIPAL-------*/
+/*-----------------*/
+
+.botao__principal {
+    border-radius: 10px;
+    background-color:  #fff;
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.botao__principal > a {
+    text-decoration: none;
+    color: #000 ;
+}
+
+
+/*-------------------*/
+/*----banner1-------*/
+/*-----------------*/
+.banner1 {
+    display: flex;
+    text-align: center;
+    
+    margin-top: 55px;
+    
+}
+
+.banner1__itens {
+    width: 100%; 
+    text-align: center;
+}
+
+.frontend {
+    display: flex;   
+    justify-content: center 
+}
+
+.backend  {
+    height:556px;
+}
+.backend img {
+    margin: 0;
+    height:556px;
+}
+
+/*-------------------*/
+/*----post1-------*/
+/*-----------------*/
+
+.post1 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+
+    padding: 4% 7%;
+}
+
+
+/*-------------------*/
+/*----RODAPE-------*/
+/*-----------------*/
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+
+
+    text-align: center;
+
+    background-color: #0b001f;
+    border-top: 1px solid #fff;
+    margin: 0;
+
+    padding: 15px;
+    
+}
+
+.rodape__itens {
+    color: white;
+    font-size: 16px;
+
+
+    margin: 0;
+
+
+}
+
+
+/* dentro do botaao :  animation: girar 1s infinite linear;
+
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+} */
