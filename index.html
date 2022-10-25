@@ -8,20 +8,21 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout..css">
-    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header class="menu">
+
+     <header class="menu">    <!--MENU - CABEÇALHO DA PAGINA  -->
         <div class="logo">
-            <h1>OUTLASK</h1>
+            <h1>MOON</h1>
         </div>
         
 
         <ul class="navegacao">
             <li class="navegacao-item">
-                <a href="#">Inicio</a>
+                <a href="index.html">Inicio</a>
             </li> 
 
             <li class="navegacao-item">
@@ -35,103 +36,43 @@
         </ul>
     </header>
 
-    </div>
+    <main>
 
-    <div class="banner1">
-        <div class="banner1__itens">
-            <div  class="frontend">
-                <a href="#frontend"><img src="front e back/front.jpg" width= 550px" alt="front end"></a>
+       <div class="post1">    <!--PRIMEIRO POST "FRONT END VS BACK END"  -->
+           <h1 class="post1__titulo" >TODOS OS POSTS DISPONIVEIS</h1>
+           <div class="post1_bloco">
+               <div class="post1__fotos">
+                   <div class="post1__fotos1">
+                       <img class="post1__fotos1-img" src="index imagens/frontvsback.png"  alt="">
+                   </div>
 
-            <div class="backend">
+               </div>
+           
+                   <a class="post1__bloco-titulo"href="fronteback.html">
+                       <h1 >FRONT END VS BACK END </h1>
+                   </a>
+           </div>
+       </div>
 
-                <a href="#backend"><img  src="front e back/backendart.png" width="550px"  alt="back end"></a>
+       <div class="post2"> <!--PRIMEIRO POST "SEGURANÇA DA INFORMAÇÃO"  -->
+        <div class="post2_bloco">
+            <div class="post2__fotos">
+                <div class="post2__fotos1">
+
+                <div class="post2__fotos1">
+                    <img class="post2__fotos1-img" src="index imagens/segurancainf.png" height="550px" alt="">
                 </div>
+                 </div>
             </div>
-            
-        </div>
+            <a class="post2__bloco-titulo"href="#">
+                <h1 >SEGURANÇA DA INFORMAÇÃO</h1>
+            </a>
     </div>
 
-    <div class="post1">
-        <h2 class="post1__titulo"> 
-            FRONT END VS BACK END  </h2>
-        <p class="post1__descricao">A área da tecnologia da informação aborda tantas linguagens 
-            e nomenclaturas que acaba sendo difícil compreender tudo. No entanto, existem dois
-             desses termos que são populares no setor mas que, mesmo assim, geram dúvidas em relação 
-             ao significado e funcionalidade. Continue a leitura para entender qual a diferença
-              entre front-end e back-end. 
-            </p>
 
-            <p class="post1__descricao">De uma forma bem simples, podemos pensar nesses dois termos da tecnologia
-                 como um espetáculo de teatro, onde temos os bastidores, que aqui seria o back-end, e o palco onde 
-                 o show acontece, que seria o front-end.
+    </main>
 
-            Ou seja, o back-end resume-se a tudo o que está por trás do site, que o usuário/leitor não 
-            tem acesso direto e não consegue interagir. Já o front-end corresponde à parte em que os usuários 
-            conseguem ver e interagir, como cores, fontes, menus, imagens entre outras funcionalidades.</p>
-
-            <h2 id="frontend" class="post1__titulo"> FRONT END</h2>
-            <p class="post1__descricao">Também conhecido como “o lado do cliente”, o front-end é o responsável por t
-                oda a estrutura, design, conteúdo, comportamento, desempenho e capacidade de resposta de um site ou
-                 aplicação,
-                ou seja, tudo o que é apresentado aos usuários para interação. Resumidamente, o front trabalha para
-                 criar
-                a arquitetura que fornecerá uma boa experiência às pessoas.
-                </p>
-            
-            <p class="post1__descricao">Por esse motivo, é essa parte da programação que certifica se um site é 
-                responsivo e funciona perfeitamente em
-            todas as telas de variados dispositivos </p>
-
-            <p class="post1__descricao">Assim como o back-end, o trabalho do desenvolvedor front-end também é
-                 baseado algumas linguagens principais. São elas: <br>
-                 <ul class="post1__lista">
-                 <li class="post1__lista__intens">
-                     <strong>HTML (HyperText Markup Language):</strong> utilizada para documentação e páginas web a partir de marcação de hipertexto;<br>
-                 </li class="post1__lista__intens" >
-
-                 <li class="post1__lista__intens" >
-                     <strong>CSS (Cascading Style Sheets):</strong> é uma linguagem de formatação de conteúdo, responsável pelo visual de um site;
-                     muito utilizada com HTML; <br>
-                 </li>
-
-                 <li class="post1__lista__intens">
-                    <strong>JavaScript:</strong> a linguagem também é utilizada para front-end, principalmente para criar dinamicidade nos <br></li>
-                </ul>
-                </p>
-
-
-        <h2 id="backend" class="post1__titulo"> 
-            BACK END  </h2>
-        <p class="post1__descricao">
-            Em uma abordagem mais técnica, o back-end envolve servidor, banco de dados e aplicação. 
-            Desta forma, o desenvolvedor na área é responsável por construir e manter esses componentes 
-            juntos para que as informações sejam organizadas e armazenadas corretamente, o que permite que uma
-            página funcione bem, de maneira segura e se mantenha no ar para os usuários acessarem. <br>
- 
-            Por exemplo, quando você acessa um site na web, o servidor dessa determinada página envia 
-            todas as informações necessárias para que ela se torne visível e você consiga acessá-la. Mas não é só isso, 
-            o back-end também é responsável por armazenar dados e garantir a segurança do site como um todo.   <br>
-
-            <ul>
-            <li  class="post1__lista__intens" >
-                <strong>PHP (Hypertext Preprocessor):</strong> linguagem de scripit específica para o desenvolvimento de sites e aplicações web; <br></li>
-            <li  class="post1__lista__intens" >
-                <strong>Phyton:</strong> lançada em 1991, é uma linguagem de alto nível utilizada para desktop, web, servidores e ciência de dados; <br></li>
-            <li  class="post1__lista__intens" >
-                <strong>Java:</strong> uma das linguagens mais populares que engloba plataforma de software e linguagem de programação; <br></li>
-            <li  class="post1__lista__intens" >
-                <strong>JavaScript: </strong>linguagem voltada para desenvolvimento web totalmente versátil. <br></li>
-            </ul>
-        </p>
-
-
-    </div>
-
-    <footer class="rodape">
+    <footer class="rodape">  <!--RODAPE DA PAGINA -->
         <h2 class="rodape__itens"> todos os direitos reservados</h2>
     </footer>
-
-
 </body>
-
-</html>

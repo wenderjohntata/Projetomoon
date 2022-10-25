@@ -61,143 +61,61 @@ body {
     width: 3%;
 }
 
+/*-------------------*/
+/*----banner1-------*/
+/*-----------------*/
+.banner_foto {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 
-    /* MINHA FOTO */
+    border-radius: 20px;
+    border: 2px solid var(--cor1);
+
+    margin: 0;
     
-    .minhafoto {
-        border-radius: 30px;
-
-    }
-    
-    .bloco1 {
-        display: flex;
-        width: 70%;
-        background-color: #140038;
-        margin: auto;
-        padding: 20px;
-        margin-top: 25px;
-        border-radius: 20px;
-        border: 2px solid rgba(255, 63, 213, 0.582);
-        align-items: center;
-    }
-
-    
-    
-    .titulo {
-        text-align: center;
-        flex-direction: column;
-        color: white;
-    }
-    
-    .sobremim__item {
-        text-align: left;
-        font-size: 1.8rem;
-        color: white;
-        margin: 5px 5px 5px 8px;
-    }
-
-    .sobremim__item > strong {
-        color: rgb(254, 14, 146);
-    }
-    
-    .information {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-    }
-    
-    .contatos {
-        text-align: center;
-    }
-
-    .contatos img {
-        border-radius: 40px;
-    }
-    
-    .contatos__intens {
-        padding: 20px;
-    }
+}
 
 
-/* ///////////////BLOCO 2 //////////////////*/
+/*-------------------*/
+/*----post1-------*/
+/*-----------------*/
 
-    .titulo__bloco2 {
-        margin-top: 50px;
-        text-align: center;
-        color: white;
-    }
+.post1 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
 
-    
-    .bloco2__itens {
-        text-align: center;
-        padding: 0 30px;
-    }
-    
-    .bloco2 {
-        text-align: center;
-    }
+    padding: 2% 4%;
 
+    padding-top: 0;
 
-    .bloco2__itens:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
-    
-    }
+}
 
-    .bloco2__itens{
-    transition: 0.5s;
-    transform: scale(1);
-    }
+.post1__titulo {
+    color: white;
+    text-decoration: none;
+}
 
-    .naoconcluido{
-        opacity: 30%;
-    }
+.post1__titulo-modificador:hover {
+    color: var(--cor1);
+}
 
+.post1__descricao {
+    text-indent: 4%;
+}
 
-/* BLOCO 3  //////////////////*/
+.post1__lista__intens {
+    padding: 0;
+    text-align: left;
+    margin-left: 14%;
+    margin-right: 14%;
+}
 
-    .botao {
-        text-align: center;
-        align-items: center;
-
-        border-radius: 20px;
-    }
-
-    .botao:hover {
-        transform: scale(1.05);
-    }
-    .bloco3 {
-        text-align: center;
-
-            
-    }
-
-    .botao {
-        display: inline-block;
-        
-        font-size: 16px;
-        padding: 15px;
-
-        background-color: #140038;
-        border-color: rgb(254, 14, 146);
-        border-style: outset;
-
-        cursor: pointer;
-
-        transform: scale(1.0);
-        transition: 0.5s;
-
-    }
-
-    .botao > a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .botao:hover {
-        transform: scale(1.1);
-        transition: 0.5s
-    }
+.post1__lista__intens > strong {
+    color: rgb(245, 0, 192);
+}
 
 
 /*-------------------*/
@@ -205,30 +123,43 @@ body {
 /*-----------------*/
 
 .rodape {
-    
-    position: relative;
     bottom: 0;
     width: 100%;
+
 
     text-align: center;
 
     background-color: #0b001f;
     border-top: 1px solid #fff;
+    margin: 0;
 
-    margin-top: 3.125rem;
+    padding:15px 0px;
     
-
-    padding: 15px 0px;
-
 }
 
 .rodape__itens {
     color: white;
     font-size: 16px;
 
+
     margin: 0;
+
+
 }
 
+
+/* dentro do botaao :  animation: girar 1s infinite linear;
+
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+} */
 
 /*-------------------*/
 /*----RESPONSISIVIDADE-------*/
@@ -301,18 +232,21 @@ body {
         padding: 30px 30px;
     }
 
-    /* ____bloco1_____ */
-    .bloco1 {
-        flex-direction: column;
-        margin: 7% 5% 5% 5%;
-        width: auto;
+
+    /* _____banner1_____ */
+    .banner_foto {
+        margin-top: 3%;
     }
 
-    .minhafoto {
-        width: auto;
+    .post1__titulo {
+    font-size: 130%;
     }
 
+    /* _____banner2_____ */
 
+    .post1__titulo > h2{
+    font-size: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -326,4 +260,5 @@ body {
 
 } 
 
-    
+
+

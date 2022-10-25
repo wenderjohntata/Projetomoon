@@ -1,0 +1,349 @@
+:root {
+    --cor1:rgb(245, 0, 192);
+}
+
+body {
+    background-color: #0e0027;
+}
+
+ /* MENU //////////////////*/ 
+.menu {
+    display: flex;
+    background-color: #0e0027;
+    align-items: center;
+    
+    border-bottom: 1px solid rgba(255, 63, 213, 0.582);
+}
+
+.navegacao {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navegacao-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    height: 100%;
+    
+    
+}
+
+
+.navegacao-item:hover {
+    background-color: #371b6b;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.navegacao-item>a {
+    text-decoration: none;
+    color: white;
+    padding: 39px 80px;
+}
+
+.logo {
+    color: white;
+    margin-left: 20px;
+}
+
+.voltar {
+    margin: 1%;
+}
+
+/*-------------------*/
+/*-----banner1------*/
+/*-----------------*/
+.frontend {
+    display: flex;
+    padding: 4% 1% 4% 6%;
+    
+
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(89, 20, 89), rgb(15, 15, 101)  ,rgb(255, 2, 225), purple);
+    border-radius: 30px;
+
+    max-height: 281px;
+
+    margin: 4% 7% 4% 7%;
+}
+
+.frontend img {
+    height: 281px;
+    max-height: 281px;
+    border-radius: 10px;
+}
+
+.banner1{
+    width: 100%;
+    text-align: center;
+    padding:20px 0 20px 20px 20px ; 
+
+}
+
+.banner1cursos{
+    text-align: center;
+    font-size: 120%;
+
+    padding:20px 20px 173px 20px;
+    
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.banner1cursos:hover{
+    transform: scale(1.09);
+    transition: 0.5s;
+
+    padding: 0px;
+}
+
+.frontend__cursos {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0;
+}
+
+
+
+.banner1cursos >strong {
+    color: white;
+
+}
+
+
+.banner1cursos > p {
+    display: none;
+
+}
+
+.banner1cursos:hover > p {
+    display: block;
+}
+
+.banner1cursos a {
+    text-decoration: none;
+    color: white;
+
+    padding: 3px 20px;
+
+}
+
+/*-------------------*/
+/*-----banner2------*/
+/*-----------------*/
+
+.backend {
+    padding: 40px 10px 40px 60px;
+    display: flex;
+
+    color: white;
+    background-image: linear-gradient(to right, rgb(89, 20, 89), rgb(15, 15, 101)  ,rgb(255, 2, 225), purple);
+    border-radius: 30px;
+
+    max-height: 281px;
+
+    margin: 4% 7% 4% 7%;
+}
+
+.backend img {
+    height: 281px;
+    max-height: 281px;
+    border-radius: 10px;
+}
+
+.banner2{
+    width: 100%;
+    text-align: center;
+    padding:20px 0 20px 20px 20px ; 
+
+}
+
+.banner2cursos{
+    text-align: center;
+    font-size: 120%;
+
+    padding:20px 20px 173px 20px;
+    
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.banner2cursos:hover{
+    transform: scale(1.09);
+    transition: 0.5s;
+
+    padding: 0px;
+}
+
+.backend__cursos {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0;
+}
+
+
+
+.banner2cursos >strong {
+    color: white;
+
+}
+
+
+.banner2cursos > p {
+    display: none;
+
+}
+
+.banner2cursos:hover > p {
+    display: block;
+}
+
+.banner2cursos a {
+    text-decoration: none;
+    color: white;
+
+    padding: 3px 20px;
+
+}
+
+
+
+/*-------------------*/
+/*----RODAPE-------*/
+/*-----------------*/
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+
+
+    text-align: center;
+
+    background-color: #0b001f;
+    border-top: 1px solid #fff;
+    margin: 0;
+
+    padding:15px 0px;
+    
+}
+
+.rodape__itens {
+    color: white;
+    font-size: 16px;
+
+
+    margin: 0;
+
+
+}
+
+
+
+/*-------------------*/
+/*----RESPONSISIVIDADE-------*/
+/*-----------------*/
+
+
+@media (max-width: 1200px) {
+
+    /* __________MENU_________ */
+    .logo {
+        text-align: center;
+        margin: 0;
+        font-size: 90%;
+    }
+
+    .menu {
+        display: block;
+        flex-direction: column;
+        
+        border: 0;   
+        background-color: #0e0027;   
+        border-bottom: 1px solid rgba(255, 63, 213, 0.582);  
+    }
+
+    .navegacao {
+       
+
+        margin-top: 0;
+        padding-left: 0;
+
+
+
+    }
+
+    .voltar {
+        display: none;
+    }
+
+
+    .navegacao {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+
+    }
+    
+    .navegacao-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .navegacao-item:hover {
+        background-color: #371b6b;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
+    
+    .navegacao-item>a {
+        text-decoration: none;
+        color: white;
+        padding: 30px 30px;
+    }
+
+    /* ____front end_______ */
+    
+    .frontend {
+        display: block;
+        text-align: center;
+        padding: 0;
+
+        padding-bottom: 300px;
+
+        
+    }
+
+    .banner1cursos {
+        height: 7px;
+    }
+
+    .frontend img {
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .banner1cursos > p {
+        display: block;
+    
+    }
+
+}
