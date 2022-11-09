@@ -53,122 +53,69 @@ body {
     margin-left: 20px;
 }
 
+.voltar {
+    
+    margin: 1%;
+}
+.botao__voltar {
+    width: 3%;
+}
+
 /*-------------------*/
-/*-----TITULO------*/
+/*----banner1-------*/
+/*-----------------*/
+.banner_foto {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+
+    border-radius: 20px;
+    border: 2px solid var(--cor1);
+
+    margin: 0;
+    
+}
+
+
+/*-------------------*/
+/*----post1-------*/
 /*-----------------*/
 
-.titulo__mapa {
-    
+.post1 {
     text-align: center;
+    font-size: 18px;
     color: white;
 
-    width: 60%;
+    padding: 2% 4%;
 
-    margin: auto;
-    
+    padding-top: 0;
 
-    font-size: 22px;
 }
 
-/*-------------------*/
-/*-----post1------*/
-/*-----------------*/
-
-.mapa {
-    margin: 2%;
-    
-    text-align: center;
-
-    
-    max-width: 900px;
-    margin: auto;
-    margin-top: 3%;
-
-
-    border-radius: 40px;   
-
-    background-image: linear-gradient(to bottom right, rgb(89, 20, 89), rgb(15, 15, 101)  ,rgb(255, 2, 225), purple);
+.post1__titulo {
+    color: white;
+    text-decoration: none;
 }
 
-.mapa__frontend {
-    width: 100%;
-    padding: 10px;
-    margin-left: -10px;
-
-    
-    
+.post1__titulo-modificador:hover {
+    color: var(--cor1);
 }
 
-
-
-
-/*-------------------*/
-/*-----post2------*/
-/*-----------------*/
-
-.mapa2 {
-    margin: 2%;
-    /* margin-top: 5%; */
-    text-align: center;
-
-    max-width: 900px;
-    margin: auto;
-
-    margin-top: 7%;
-
-    border-radius: 40px;   
-
-    background-image: linear-gradient(to bottom right, rgb(89, 20, 89), rgb(15, 15, 101)  ,rgb(255, 2, 225), purple);
+.post1__descricao {
+    text-indent: 4%;
 }
 
-.mapa__back {
-    text-align: center;
-    width: 98%;
-    padding: 10px 10px 20px 10px;
-
-    margin-left: -5px;
-
-    
+.post1__lista__intens {
+    padding: 0;
+    text-align: left;
+    margin-left: 14%;
+    margin-right: 14%;
 }
 
-
-/*-------------------*/
-/*-----post3------*/
-/*-----------------*/
-
-.mapa3 {
-    margin: 2%;
-    /* margin-top: 5%; */
-    text-align: center;
-
-   
-
-    max-width: 900px;
-    margin: auto;
-
-    margin-top: 7%;
-    margin-bottom: 7%;
-
-    border-radius: 40px;   
-
-    background-image: linear-gradient(to bottom right, rgb(89, 20, 89), rgb(15, 15, 101)  ,rgb(255, 2, 225), purple);
+.post1__lista__intens > strong {
+    color: rgb(245, 0, 192);
 }
-
-.mapa__games {
-    text-align: center;
-    width: 98%;
-    padding: 10px 10px 20px 10px;
-
-    margin-left: -5px;
-    
-
-    
-}
-
-
-
-
-
 
 
 /*-------------------*/
@@ -191,24 +138,34 @@ body {
 }
 
 .rodape__itens {
-    
     color: white;
     font-size: 16px;
 
-    margin-bottom: 0;
+
     margin: 0;
 
 
 }
 
 
+/* dentro do botaao :  animation: girar 1s infinite linear;
+
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
 /*-------------------*/
 /*----RESPONSISIVIDADE-------*/
 /*-----------------*/
 
-
 @media (max-width: 900px) {
-
     /* __________MENU_________ */
     .logo {
         text-align: center;
@@ -216,19 +173,22 @@ body {
         font-size: 90%;
     }
 
+
+
+    .logo {
+        text-align: center;
+        margin: 0;
+    }
+
     .menu {
         display: block;
         flex-direction: column;
         
-        border: 0;   
-        background-color: #0e0027;   
-        border-bottom: 1px solid rgba(255, 63, 213, 0.582);
-        
-        
+        border: 0;        
     }
 
     .navegacao {
-       
+        border-bottom: 1px solid rgba(255, 63, 213, 0.582);
 
         margin-top: 0;
         padding-left: 0;
@@ -240,7 +200,6 @@ body {
     .voltar {
         display: none;
     }
-
 
     .navegacao {
         display: flex;
@@ -259,6 +218,7 @@ body {
         width: 100%;
         
     }
+    
 
     .navegacao-item:hover {
         background-color: #371b6b;
@@ -272,23 +232,24 @@ body {
         padding: 30px 30px;
     }
 
-    .titulo__mapa {
-        
-        text-align: center;
-        color: white;
-    
-        width: 60%;
-    
-        margin: auto;
-        
-        margin-top: 5%;
-        font-size: 22px;
+
+    /* _____banner1_____ */
+    .banner_foto {
+        margin-top: 3%;
     }
-    
-   
-    
-    
+
+    .post1__titulo {
+    font-size: 130%;
+    }
+
+    /* _____banner2_____ */
+
+    .post1__titulo > h2{
+    font-size: 100%;
+    }
 }
+
+
 
 @media (max-width: 400px) {
     .navegacao-item {
@@ -299,17 +260,25 @@ body {
         height: 80px;
     }
 
-} 
-
-@media (max-width: 600px) {
-    /* .rodape {
-        position: fixed;
-        bottom: 0;
-    } */
-
-    .titulo__mapa {
-    
-        font-size: 19px;
+    .youtube {
+        /* width: 200px;
+        height: 200px; */
     }
-    
+
 } 
+
+
+@media (max-width:700px) {
+    .youtube {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .youtube {
+        width: 300px;
+        height: 200px;
+    }
+}

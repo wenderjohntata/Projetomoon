@@ -461,9 +461,9 @@ body {
 @media (max-width: 510px) {
 
     /* ____FRONTEND______ */
-    .frontend__cursos {
+    /* .frontend__cursos {
         align-items: flex-end;
-    }
+    } */
 
     .banner1cursos-diferente {
         margin: 0;
@@ -508,9 +508,9 @@ body {
     }
 
      /* ____BACKEND______ */
-     .backend__cursos {
+     /* .backend__cursos {
         align-items: flex-end;
-    }
+    } */
 
     .banner2cursos-diferente {
         margin: 0;
